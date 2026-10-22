@@ -2,4 +2,5 @@
 	(version 7)
 	(lib (name "ESP-super_mini") (type "KiCad") (uri "${KIPRJMOD}/ESP-super_mini.pretty") (options "") (descr ""))
 	(lib (name "HT7833") (type "KiCad") (uri "/home/gregstr/NomiStar/HT7833.pretty") (options "") (descr ""))
+	(lib (name "ESP-super_mini") (type "KiCad") (uri "${KIPRJMOD}/ESP-super_mini.pretty") (options "") (descr ""))
 )

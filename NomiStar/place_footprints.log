@@ -1,0 +1,35 @@
+10-22 13:38:38 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 674:Plugin executed on: 'linux'
+10-22 13:38:38 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 675:Plugin executed with python version: '3.14.8 (main, Oct  2 2026, 10:23:31) [GCC 16.2.1 20260810]'
+10-22 13:38:38 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 676:KiCad build version: 10.0.7
+10-22 13:38:38 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 677:Plugin version: 5.0.0
+
+10-22 13:38:38 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 678:Frame repr: <wx._core.Frame object at 0x7fbac000fad0>
+10-22 13:38:38 com_github_MitjaNemec_PlaceFootprints.place_footprints 121:getting a list of all footprints on board
+10-22 13:38:38 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J2 on root level
+10-22 13:38:38 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J8 on root level
+10-22 13:38:38 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint R1 on root level
+10-22 13:38:38 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint U2 on root level
+10-22 13:38:38 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J6 on root level
+10-22 13:38:38 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint SW1 on root level
+10-22 13:38:38 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint U1 on root level
+10-22 13:38:38 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J1 on root level
+10-22 13:38:38 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint IC1 on root level
+10-22 13:38:38 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J5 on root level
+10-22 13:38:38 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J4 on root level
+10-22 13:38:38 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J3 on root level
+10-22 13:38:38 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 717:Reference footprint='J1'
+10-22 13:38:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 858:Reference designator is: J
+10-22 13:38:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 859:Reference number is: 1
+10-22 13:38:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 891:Sorted and filtered list:
+['J1', 'J2', 'J3', 'J4', 'J5', 'J6']
+10-22 13:38:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 376:wx.Colour(32, 35, 38, 255)
+10-22 13:40:30 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 507:'55'
+10-22 13:40:30 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 559:Preparing config for reference circular
+10-22 13:40:30 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 573:Saving config file
+10-22 13:40:30 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 575:Saved the config file
+10-22 13:40:30 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 929:Footprints to place:
+['J1', 'J2', 'J3', 'J4', 'J5']
+10-22 13:40:30 com_github_MitjaNemec_PlaceFootprints.place_footprints 359:Starting placing with circular layout
+10-22 13:40:30 com_github_MitjaNemec_PlaceFootprints.place_footprints 369:reference footprint position at: VECTOR2I(100100000, 46760000)
+10-22 13:40:30 com_github_MitjaNemec_PlaceFootprints.place_footprints 374:rotation center at: (100100000, 101760000.0)
+10-22 13:40:30 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 944:Placing complete
