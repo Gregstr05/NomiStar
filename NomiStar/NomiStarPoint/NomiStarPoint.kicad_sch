@@ -819,6 +819,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 54.61) (xy 58.42 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c554d56-dc05-4395-b540-e34c6d810de9")
+	)
+	(wire
+		(pts
 			(xy 116.84 57.15) (xy 123.19 57.15)
 		)
 		(stroke
@@ -829,13 +839,13 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 57.15) (xy 58.42 57.15)
+			(xy 58.42 54.61) (xy 58.42 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c7088907-d8ab-483f-834a-1fb46c1e8a2c")
+		(uuid "acb3338a-9ae9-44e3-90ca-47367748b96a")
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
@@ -1831,7 +1841,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 43.18 54.61 270)
+		(at 43.18 57.15 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1842,7 +1852,7 @@
 		(fields_autoplaced yes)
 		(uuid "7d0742a3-ef2d-4f4d-824f-35e40c7c91ec")
 		(property "Reference" "#PWR03"
-			(at 39.37 54.61 0)
+			(at 39.37 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1853,7 +1863,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 46.99 54.6099 90)
+			(at 46.99 57.1499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1864,7 +1874,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 54.61 0)
+			(at 43.18 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1875,7 +1885,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 54.61 0)
+			(at 43.18 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1886,7 +1896,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 43.18 54.61 0)
+			(at 43.18 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
