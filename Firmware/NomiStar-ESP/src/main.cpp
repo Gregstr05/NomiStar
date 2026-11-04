@@ -20,14 +20,14 @@ void app_main()
 
   while(1)
   {
-    std::cout << "LED: On" << std::endl;
-    gpio_set_level(BLINK_GPIO, 1);
-    vTaskDelay(1000 / portTICK_PERIOD_MS);
-    
-    
     std::cout << "LED: Off" << std::endl;
+    gpio_set_level(BLINK_GPIO, 1);
+    vTaskDelay(500 / portTICK_PERIOD_MS);
+    
+    
+    std::cout << "LED: On" << std::endl;
     gpio_set_level(BLINK_GPIO, 0);
-    vTaskDelay(1000 / portTICK_PERIOD_MS);
+    vTaskDelay(500 / portTICK_PERIOD_MS);
   }
 }
 
