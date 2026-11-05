@@ -1,0 +1,7 @@
+*/venv/*
+*/.pio/*
+*/build/*
+*/.idea/*
+*/.dart_tool/*
+*/.widget_preview/*
+*/.vscode/*
