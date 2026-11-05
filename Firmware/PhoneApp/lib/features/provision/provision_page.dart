@@ -158,29 +158,43 @@ class _ProvisionPageState extends State<ProvisionPage> {
   }
 
   Future<void> _connect(dynamic device) async {
-    _scanSub?.cancel();
+    _scanSub?.cancel();  // scanning while connecting triggers 133 on Android
     setState(() {
       _busy = true;
       _log = "Connecting over BLE...";
       _error = null;
     });
-    try {
-      _session = await device.connect(
-        credentials: const ProvCredentials.security2(
-          username: StarProtocol.provUsername,
-          password: StarProtocol.provPassword,
-        ),
-      );
-      _networks = await _session.wifi.scan();
-      setState(() {
-        _busy = false;
-        _phase = _Phase.wifiList;
-      });
-    } catch (e) {
-      setState(() {
-        _busy = false;
-        _error = "Could not connect or establish secure session: $e";
-      });
+
+    const attempts = 4;
+    for (var i = 1; i <= attempts; i++) {
+      try {
+        // Let the scan tear down and the stack settle first -- a
+        // connect fired mid-scan is the classic 133 trigger.
+        await Future<void>.delayed(
+            Duration(milliseconds: i == 1 ? 500 : 1500));
+        _session = await device.connect(
+          credentials: const ProvCredentials.security2(
+            username: StarProtocol.provUsername,
+            password: StarProtocol.provPassword,
+          ),
+        );
+        _networks = await _session.wifi.scan();
+        if (!mounted) return;
+        setState(() {
+          _busy = false;
+          _phase = _Phase.wifiList;
+        });
+        return;
+      } catch (e) {
+        if (i == attempts) {
+          setState(() {
+            _busy = false;
+            _error = "Could not connect or establish secure session: $e";
+          });
+          return;
+        }
+        setState(() => _log = "Connect attempt $i failed, retrying...");
+      }
     }
   }
 
